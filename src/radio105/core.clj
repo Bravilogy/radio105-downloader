@@ -1,8 +1,8 @@
 (ns radio105.core
-  (:require [net.cgrand.enlive-html :as html]
+  (:require [clojure.java.io :as io]
+            [clojure.string :as string]
             [org.httpkit.client :as http]
-            [clojure.java.io :as io]
-            [clojure.string :as string])
+            [net.cgrand.enlive-html :as html])
   (:gen-class))
 
 (def urls #{"http://radio105.wanex.net/arts_geo.htm" "http://radio105.wanex.net/songs_geo.htm"})
